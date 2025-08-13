@@ -1,2 +1,0 @@
-# homehaunt.github.io
-website
