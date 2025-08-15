@@ -1,67 +1,11 @@
-
-<html lang="ug">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <head>
-  <title>Home Haunt</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  </head>
-  <h1 style="font-size: 100px; text-align: center;">HOME HAUNT</h1>
-  <body class="container py-4 ">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Home Haunt</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Location.html">Location</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                </ul>
-                <div class="form-check form-switch">
-
-                    <input class="form-check-input" type="checkbox" id="darkModeToggle">
-                    <label class="form-check-label" for="darkModeToggle">Dark Mode</label>
-                </div>
-            </div>
-        </div>
-    </nav>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-qL8I+dP/6FybDW7HbJRL5thH+vwNHkEvsayzY9Tl2IbbVYUew+OrCXaRkfj4ZGnF" crossorigin="anonymous"></script>
-<script>
-
-    const toggle = document.getElementById("darkModeToggle");
-    const html = document.documentElement;
-    if (localStorage.getItem("theme") === "dark") {
-        html.setAttribute("data-bs-theme", "dark");
-        toggle.checked = true;
-    }
-    toggle.addEventListener("change", () => {
-
-        if (toggle.checked) {
-            html.setAttribute("data-bs-theme", "dark");
-            localStorage.setItem("theme", "dark");
-        }else{
-            html.setAttribute("data-bs-theme", "light");
-            localStorage.setItem("theme", "light");
-        }
-
-    });
-
-</script>
-      
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi-Page Login App</title>
     <!-- Use Tailwind CSS for styling -->
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -115,10 +59,15 @@
         <div class="text-center">
             <h2 class="text-2xl font-bold text-gray-800 mb-4">Welcome, Banana!</h2>
             <p class="text-gray-600 mb-6">You have successfully logged in.</p>
+            <button href="dfuigjrtiudgjkdjriukgjsdv.html" 
+                    class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+                go
+            </button>
             <button id="logoutButton" 
                     class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
                 Logout
             </button>
+            
         </div>
     </div>
 
@@ -168,5 +117,4 @@
         }
     </script>
 </body>
-
 </html>
